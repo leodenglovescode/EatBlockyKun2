@@ -124,7 +124,7 @@ function gameRestart() {
     _gameScore = 0;
     _gameOver = false;
     _gameStart = false;
-    _gameTimeNum = 30;
+    _gameTimeNum = 35;
     GameTimeLayer.innerHTML = creatTimeText(_gameTimeNum);
     countBlockSize();
     refreshGameLayer(GameLayer[0]);
@@ -344,9 +344,20 @@ function shareText(score) {
     }
     SubmitResults();
     if (score <= 30) return '段位 - 鸡你太美';
-    if (score <= 60) return '段位 - 鸡你太太美';
-    if (score <= 100) return '段位 - 唱跳r a p篮球';
-    if (score <= 150) return '段位 - 鸡之王者';
+    if (score <= 40) return '段位 - 鸡你太太美';
+    if (score <= 50) return '段位 - 鸡你太太太美';
+    if (score <= 60) return '段位 - 黄金鸡I';
+    if (score <= 70) return '段位 - 黄金鸡II';
+    if (score <= 80) return '段位 - 黄金鸡III';
+    if (score <= 90) return '段位 - 黄金鸡IV';
+    if (score <= 100) return '段位 - 钻石鸡I';
+    if (score <= 140) return '段位 - 钻石鸡II';
+    if (score <= 170) return '段位 - 绿宝石I';
+    if (score <= 190) return '段位 - 绿宝石II';
+    if (score <= 210) return '段位 - 红宝石I';
+    if (score <= 260) return '段位 - 红宝石II';
+    if (score <= 290) return '段位 - 黄金钻石宝石鸡I';
+    if (score <= 300) return '段位 - 鸡之王者';
     return '你就是坤坤？';
 }
 
